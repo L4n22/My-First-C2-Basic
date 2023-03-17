@@ -8,7 +8,7 @@ class TaskType(Enum):
     @classmethod
     def get_options(cls):
         options = {
-            "COMMAND": 'command=<COMMAND HERE>',
+            "COMMAND": "command=<COMMAND HERE>",
             "DOWNLOADFILE": ""
         }
 

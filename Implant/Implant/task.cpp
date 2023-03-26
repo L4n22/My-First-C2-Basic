@@ -1,7 +1,6 @@
 #include "task.hpp"
 
 
-
 void Task::setResult(std::string result)
 {
     boost::property_tree::ptree resultree;
@@ -12,6 +11,7 @@ void Task::setResult(std::string result)
     boost::property_tree::write_json(resultStream, resultree);
     this->result = resultStream.str();
 }
+
 
 void Task::setSuccess(bool success)
 {
